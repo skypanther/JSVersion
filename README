@@ -1,0 +1,35 @@
+JSVersion
+by @skypanther
+
+Titanium mobile app for detecting JavaScript features supported by your device.
+
+Detects features of the Titanium's integrated JavaScript interpreter (Rhino, V8, or JavaScript Core) supports, not what your mobile device's browser (e.g. Mobile Safari) supports.
+
+This app uses tests from @kangax's ECMAScript 5 compatibility table page (http://kangax.github.com/es5-compat-table/) to detect which JavaScript features are supported by the Titanium JavaScript interpreter on your device. Note that these tests don't test full functionality or conformance with the ECMA-262 spec.
+
+
+----------------------------------
+
+
+(stock README stuff follows...)
+
+
+
+Welcome to your Appcelerator Titanium Mobile Project
+
+This is a blank project.  Start by editing your application's app.js to 
+make your first mobile project using Titanium.
+
+
+
+----------------------------------
+Stuff our legal folk make us say:
+
+Appcelerator, Appcelerator Titanium and associated marks and logos are 
+trademarks of Appcelerator, Inc. 
+
+Titanium is Copyright (c) 2009-2010 by Appcelerator, Inc. All Rights Reserved.
+
+Titanium is licensed under the Apache Public License (Version 2). Please
+see the LICENSE file for the full license.
+
