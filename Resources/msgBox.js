@@ -5,7 +5,7 @@ var platform = Ti.Platform.osname;
 var theFontSize = 15;
 var theHeadingFontSize = 17;
 var theFontFamily = 'Helvetica Neue';
-var textAreaWidth = '40%';
+var textAreaWidth = 320;
 if(platform == 'android') {
 	theFontSize = 26;
 	theHeadingFontSize = 32;

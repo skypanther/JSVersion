@@ -1,7 +1,7 @@
 JSVersion
 by @skypanther
 
-Titanium mobile app for detecting JavaScript features supported by your device.
+JavaScript feature detection in Titanium Mobile
 
 Detects features of the Titanium's integrated JavaScript interpreter (Rhino, V8, or JavaScript Core) supports, not what your mobile device's browser (e.g. Mobile Safari) supports.
 

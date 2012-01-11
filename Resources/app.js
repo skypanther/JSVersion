@@ -49,7 +49,14 @@ var tests = [
 	{label: 'Date.prototype.toISOString', exp:eval(typeof Date.prototype.toISOString == 'function'), testcase: "typeof Date.prototype.toISOString == 'function'"},
 	{label: 'Date.now', exp:eval(typeof Date.now == 'function'), testcase: "typeof Date.now == 'function'"},
 	{label: 'Array.isArray', exp:eval(typeof Array.isArray == 'function'), testcase: "typeof Array.isArray == 'function'"},
-	//{label: 'JSON', exp:eval(typeof JSON == 'object'), testcase: "typeof JSON == 'object'"},
+/*
+	Titanium provides its own implementation of the JSON object. So, the original test from @kangax would always pass
+	{label: 'JSON', exp:eval(typeof JSON == 'object'), testcase: "typeof JSON == 'object'"},
+	
+	Per the 262-5 spec, the JSON prototype should exist and should have a Class property equal to "JSON"
+	If we used the native JS object, the following should resolve to true. But since we use our own implementation, it fails
+	{label: 'JSON', exp:eval(typeof JSON.prototype != 'undefined' && typeof JSON.prototype.Class == 'JSON'), testcase: "typeof JSON.prototype != 'undefined' && typeof JSON.prototype.Class == 'JSON'"},
+*/
 	{label: 'Function.prototype.bind', exp:eval(typeof Function.prototype.bind == 'function'), testcase: "typeof Function.prototype.bind == 'function'"},
 	{label: 'String.prototype.trim', exp:eval(typeof String.prototype.trim == 'function'), testcase: "typeof String.prototype.trim == 'function'"},
 	{label: 'Array.prototype.indexOf', exp:eval(typeof Array.prototype.indexOf == 'function'), testcase: "typeof Array.prototype.indexOf == 'function'"},
