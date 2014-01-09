@@ -1,20 +1,3 @@
-JSVersion
-by @skypanther
-
-JavaScript feature detection in Titanium Mobile
-
-Detects features of the Titanium's integrated JavaScript interpreter (Rhino, V8, or JavaScript Core) supports, not what your mobile device's browser (e.g. Mobile Safari) supports.
-
-This app uses tests from @kangax's ECMAScript 5 compatibility table page (http://kangax.github.com/es5-compat-table/) to detect which JavaScript features are supported by the Titanium JavaScript interpreter on your device. Note that these tests don't test full functionality or conformance with the ECMA-262 spec.
-
-
-----------------------------------
-
-
-(stock README stuff follows...)
-
-
-
 Welcome to your Appcelerator Titanium Mobile Project
 
 This is a blank project.  Start by editing your application's app.js to 
